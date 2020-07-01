@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color4"
+    tools:context=".Activity.DetailUsers">
+
+    <RelativeLayout
+        android:id="@+id/rvDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.85"
+        android:background="@color/color4">
+
+        <RelativeLayout
+            android:id="@+id/cardDetailUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color4"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/avatarUser"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:contentDescription="user pictures"
+                android:padding="8dp"
+                android:src="@mipmap/user1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cardDetailUser1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardDetailUser">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.85">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color1"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/personName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="Person Name"
+                        android:textColor="@color/color4"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/personName"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        tools:ignore="UselessParent">
+
+                        <LinearLayout
+                            android:id="@+id/linearIn1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_margin="1dp"
+                                android:background="@color/color2"
+                                android:drawableStart="@drawable/ic_baseline_work_outline_24"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/color4"
+                                tools:ignore="RtlCompat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_margin="1dp"
+                                android:background="@color/color2"
+                                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/color4"
+                                tools:ignore="RtlCompat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_margin="1dp"
+                                android:background="@color/color2"
+                                android:drawableStart="@drawable/ic_noun_user_961"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/color4"
+                                tools:ignore="RtlCompat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_margin="1dp"
+                                android:background="@color/color2"
+                                android:drawableStart="@drawable/ic_noun_repository_198209"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/color4"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearIn2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/companyName"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_margin="1dp"
+                                android:background="@color/color2"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="Company Name"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/color4"
+                                tools:ignore="RtlCompat" />
+
+                            <TextView
+                                android:id="@+id/userAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_margin="1dp"
+                                android:background="@color/color2"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="Address"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/color4"
+                                tools:ignore="RtlCompat" />
+
+                            <TextView
+                                android:id="@+id/gitUsername"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_margin="1dp"
+                                android:background="@color/color2"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="Username"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/color4"
+                                tools:ignore="RtlCompat" />
+
+                            <TextView
+                                android:id="@+id/userRepository"
+                                android:layout_width="match_parent"
+                                android:layout_height="32dp"
+                                android:layout_margin="1dp"
+                                android:background="@color/color2"
+                                android:gravity="center"
+                                android:padding="4dp"
+                                android:text="Repository"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/color4"
+                                tools:ignore="RtlCompat" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardFollowers"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear1"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="8dp"
+                        app:cardCornerRadius="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/followersValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/color2"
+                                android:text="56995"
+                                android:textAlignment="center"
+                                android:textColor="@color/color4"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/followers"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="19dp"
+                                android:background="@color/colorPrimary"
+                                android:text="Followers"
+                                android:textAlignment="center"
+                                android:textColor="@color/color4"
+                                android:textSize="8sp"
+                                tools:ignore="SmallSp" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardFollowing"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear1"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toEndOf="@+id/cardFollowers"
+                        app:cardCornerRadius="4dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/followingValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/color2"
+                                android:text="56995"
+                                android:textAlignment="center"
+                                android:textColor="@color/color4"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/following"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginTop="19dp"
+                                android:background="@color/colorPrimary"
+                                android:text="Following"
+                                android:textAlignment="center"
+                                android:textColor="@color/color4"
+                                android:textSize="8sp"
+                                tools:ignore="SmallSp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardVisit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <Button
+                                android:id="@+id/visitGithub"
+                                android:layout_width="52dp"
+                                android:layout_height="24dp"
+                                android:background="@color/color2"
+                                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                                android:text="VISIT"
+                                android:textAlignment="viewEnd"
+                                android:textColor="@color/color4"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
